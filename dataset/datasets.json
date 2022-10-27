@@ -1,0 +1,9 @@
+{
+  "datasets": [
+    {
+      "bucket_name": "ctscans_saopaulo",
+      "blob_name": "ctscans.zip",
+      "destination_file_name": "test/ctscans.zip"
+    }
+  ]
+}
