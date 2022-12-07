@@ -41,5 +41,4 @@ def download_public_data_from_url ():
         open(name, "wb").write(response.content)
 
         os.replace(name, "../custom_data/file.foo")
-# download_dataset_from_json()
-download_public_data_from_url()
+
