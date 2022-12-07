@@ -1,5 +1,6 @@
 import os
 import json
+import requests
 
 from utils.download_gcp import download_blob, authenticate_implicit_with_adc
 # from utils.parse_json import parse_dataset_json_file
@@ -27,5 +28,18 @@ def download_dataset_from_json ():
         # make google storage api call to download the blob to our dir
         download_blob(bucket_name, blob_name, destination_file_name, "fluid-tangent-363120")
 
-download_dataset_from_json()
+def download_public_data_from_url ():
+    # read in json file
+    f = open('datasets.json')
+    data = json.load(f)
 
+    # iterate over datasets in .json file
+    for i, dataset in enumerate(data['public_datasets']):
+        name = dataset['name']
+        url = dataset['url']
+        response = requests.get(url)
+        open(name, "wb").write(response.content)
+
+        os.replace(name, "../custom_data/file.foo")
+# download_dataset_from_json()
+download_public_data_from_url()

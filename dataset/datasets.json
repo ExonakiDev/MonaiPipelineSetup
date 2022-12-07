@@ -5,5 +5,11 @@
       "blob_name": "ctscans.zip",
       "destination_file_name": "test/ctscans.zip"
     }
+  ],
+    "public_datasets": [
+    {
+      "name": "hippocampus.tar",
+      "url": "https://storage.googleapis.com/heart_data/Task04_Hippocampus.tar"
+    }
   ]
 }
