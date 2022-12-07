@@ -1,1 +1,1 @@
-from download import download_public_data_from_url
+import download
