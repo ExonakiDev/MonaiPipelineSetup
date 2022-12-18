@@ -1,6 +1,5 @@
 from google.cloud import storage
 
-
 def download_blob(bucket_name, source_blob_name, destination_file_name, project_id):
     """Downloads a blob from the bucket."""
     # The ID of your GCS bucket

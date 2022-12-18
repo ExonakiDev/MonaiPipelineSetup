@@ -2,7 +2,9 @@ import os
 import json
 import requests
 
-from utils.download_gcp import download_blob, authenticate_implicit_with_adc
+from dataset.download_gcp import authenticate_implicit_with_adc, download_blob
+
+# from download_gcp import download_blob, authenticate_implicit_with_adc
 # from utils.parse_json import parse_dataset_json_file
 
 def download_dataset_from_json ():
@@ -42,3 +44,4 @@ def download_public_data_from_url ():
 
         os.replace(name, "../custom_data/file.foo")
 
+download_dataset_from_json ()
