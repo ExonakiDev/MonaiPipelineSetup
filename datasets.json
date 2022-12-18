@@ -1,9 +1,10 @@
 {
   "datasets": [
     {
+      "project_name": "fluid-tangent-363120",
       "bucket_name": "ctscans_saopaulo",
       "blob_name": "ctscans.zip",
-      "destination_file_name": "test/ctscans.zip"
+      "destination_file_name": "datasets/ctscans.zip"
     }
   ],
     "public_datasets": [
